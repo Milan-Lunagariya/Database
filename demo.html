@@ -1,0 +1,18 @@
+<html>
+	<HEAD>
+		<script>
+			function myform(){
+				let numb = document.getElementById("numb").value;
+				let text;
+				if(numb == 2){
+					text = "Somthing want Wrong";
+				}
+				document.getElementById("error").innerHTML = text;
+			}
+		</script>
+	</HEAD>
+	<body>
+		Number :<input type="text" id="numb">
+		<button onclick="return myform()">Submit</button><span id="error"></span>
+	</body>
+</html>
